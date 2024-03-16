@@ -23,11 +23,11 @@ jobs:
         uses: actions/setup-java@v4
         with:
           distribution: 'temurin'
-          java-version: 17
+          java-version: 11
 
       # setup sonar-acanner
       - name: Setup Sonarcube
-        uses: warchant/setup-sonar-scanner@v7
+        uses: warchant/setup-sonar-scanner@v8
 
       # Run sonar-scanner
       - name: SonarQube Scan
